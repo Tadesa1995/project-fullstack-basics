@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span> us</h1>
+
+    <form id="userreqwest">
+      <div class="inputBox">
+        <input type="text" placeholder="name" />
+        <input type="email" placeholder="email" />
+      </div>
+
+      <div class="inputBox">
+        <input type="number" placeholder="number" />
+        <input type="text" placeholder="subject" />
+      </div>
+
+      <textarea
+        placeholder="message"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <input type="submit" value="getUserInquiries    " class="btn" />
+    </form>
+  </section>
+</body>
+</html>
+<form id="idAddProduct">
+    <input
+      id="Product category"
+      type="text"
+      name="name"
+      placeholder="Product category"
+    />
+    <input id="product Price" type="number" placeholder="enter price" />
+    <input
+      id="productName"
+      type="text"
+      name="name"
+      placeholder="product name"
+    />
+    <input
+      id="product Description"
+      type="text"
+      name="name"
+      placeholder="product Description "
+    />
+    <input id=" img Links" type="text" placeholder="enter img link" />
+    <input type="submit" value="Add Product" />
+  </form>
+  <button onclick="getProduct()">Get Product</button>
+  <button onclick="updateById()">Update</button>
+  <button onclick="deleteProductsById()">deleteProductsById</button>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"
+    integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    document
+      .getElementById("idAddProduct")
+      .addEventListener("submit", AddProduct);
+      
+     
